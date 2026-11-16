@@ -1,11 +1,11 @@
 :root {
-    --bg-color: #0f172a;
-    --card-bg: #1e293b;
-    --text-color: #f8fafc;
-    --text-muted: #94a3b8;
-    --primary-color: #38bdf8;
-    --secondary-color: #818cf8;
-    --accent-color: #f43f5e;
+    --bg-color: #201a16;
+    --card-bg: #302820;
+    --text-color: #f5f0e8;
+    --text-muted: #b6aaa0;
+    --primary-color: #d8ad5a;
+    --secondary-color: #bd965a;
+    --accent-color: #a56e43;
 }
 
 * {
@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background-color: rgba(15, 23, 42, 0.9);
+    background-color: rgba(32, 26, 22, 0.94);
     position: fixed;
     width: 100%;
     top: 0;
@@ -76,7 +76,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 0 1rem;
-    background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+    background: radial-gradient(circle at center, #3a2d22 0%, #201a16 100%);
 }
 
 .hero h1 {
@@ -110,7 +110,7 @@ body {
 
 .primary-btn {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    color: #fff;
+    color: #201a16;
 }
 
 .secondary-btn {
@@ -120,7 +120,7 @@ body {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+    box-shadow: 0 5px 15px rgba(216, 173, 90, 0.32);
 }
 
 .social-icons {
@@ -144,7 +144,7 @@ body {
 }
 
 .bg-alt {
-    background-color: #111827;
+    background-color: #27221e;
 }
 
 .section-title {
@@ -177,7 +177,7 @@ body {
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(216, 173, 90, 0.12);
 }
 
 .skill-card i {
@@ -238,7 +238,7 @@ body {
 
 .filter-btn.active, .filter-btn:hover {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #201a16;
 }
 
 .projects-grid {
@@ -267,7 +267,7 @@ body {
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: #090d16;
+    background-color: #171310;
     color: var(--text-muted);
 }
 
@@ -277,5 +277,20 @@ footer {
     }
     .menu-toggle {
         display: block;
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 5%;
+        background-color: rgba(32, 26, 22, 0.98);
+    }
+    .nav-links li a {
+        display: block;
+        padding: 0.5rem 0;
+        margin-right: 0;
     }
 }
